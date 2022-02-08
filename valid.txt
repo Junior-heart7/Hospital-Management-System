@@ -1,0 +1,17 @@
+  <form  action="regis" method="post">
+                        <center><table><br></br>
+                                <tr><td style="color: brown;font-size: 20px">USER_ID</td><td><input style="width: 250px" type="text" name="usreid" value="<%=useridds%>" requireds="" style="color: red"  class="inputs" required/> </td> </td></tr>
+                                <tr><td style="color: brown;font-size: 20px">USERNAME</td><td><input style="width: 250px" type="text" name="username" value="" requireds="" style="color: red"  class="inputs" required/> </td> </td></tr>
+                                <tr><td style="color: brown;font-size: 20px">PASSWORD</td><td><input style="width: 250px" type="password" name="password" value="" requireds="" style="color: red"  class="inputs" required/> </td> </td>
+                                <tr><td style="color: brown;font-size: 20px">GENDER</td><td><input style="width: 250px" type="text" name="gender" value="" requireds="" style="color: red"  class="inputs" required/> </td> </td></tr>
+                                <tr><td style="color: brown;font-size: 20px">AGE</td><td><input style="width: 250px" type="text" name="age" value="" requireds="" style="color: red"  class="inputs" required/> </td> </td></tr>
+                                <tr><td style="color: brown;font-size: 20px">LOCATION</td><td><input style="width: 250px" type="text" name="loca" value="" requireds="" style="color: red"  class="inputs" required/> </td> </td></tr>
+                                <tr><td style="color: brown;font-size: 20px">MAIL_ID</td><td><input style="width: 250px" type="email" name="mailid" value="" pattern="[^ @]*@[^ @]*" style="color: red"  class="inputs" required/> </td> </td></tr>
+                                <tr><td style="color: brown;font-size: 20px">PHONE</td><td><input style="width: 250px" type="text" name="phone" value=""  pattern="[789][0-9]{9}" requireds="" style="color: red"  class="inputs" required/> </td> </td></tr>
+                                
+                               
+                                  <tr><td><input type="submit" value ="REGISTRATION " style="color: red"  class="inputs" /> </td></tr>
+                       
+                        
+                 </table></center>
+                    </form>

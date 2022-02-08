@@ -1,0 +1,48 @@
+<script language="javascript">
+        function Validate()
+        {
+            var x= document.form1.text1.value;
+            if (x.length<=0)
+           {
+                alert("Please enter the UserName");
+                return false;
+           }
+           
+           x= document.form1.pass1.value;
+            if (x.length <= 0)
+           {
+                alert("Please enter the Password");
+                return false;
+           }
+           x= document.form1.pass1.value;
+            var y = document.form1.pass2.value;
+            if (x!=y)
+           {
+                alert("The retype password is not correct");
+                return false;
+           }
+           
+            y = document.form1.text6.value;
+           if(isNaN(y)||y.indexOf(" ")!=-1)
+           {
+              alert("Enter numeric value")
+              return false; 
+           }
+          if (y.length!=10)
+           {
+                alert("enter 10 characters");
+                return false;
+           }
+
+
+            var emailID = document.form1.text7.value;
+            atpos = emailID.indexOf("@");
+            dotpos = emailID.lastIndexOf(".");
+            if (atpos < 1 || ( dotpos - atpos < 2 )) 
+            {
+                alert("Please enter correct email ID")
+                return false;
+            }
+            
+        }
+</script>

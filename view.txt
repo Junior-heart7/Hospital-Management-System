@@ -1,0 +1,26 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<%@ include file="confile.jsp"%>
+
+<A href="mainpage.jsp"> Main </A> <BR> 
+
+
+<table border="0"> 
+<tr><td height ="100" width="25%"></td><td>
+
+    
+    <table border="1" cellpadding="10" cellspacing="5"> 
+    <tr> <td height="20" colspan="2"> <img style="-webkit-user-select: none" src="images/edlist.bmp"> </td> </tr>   
+<% 
+                rst=stmt.executeQuery("select * from adminstudentreg order by name");
+		
+                while( rst.next())
+                {
+                out.println("<tr> <td height=20>"+rst.getString("name")+ " </td> <td> " + rst.getString("year")+ "</td><td> " + rst.getString("branch")+ "</td><td> " + rst.getString("course")+ "</td><td> " + rst.getString("email")+ "</td></tr>" );
+                }
+                
+%>  
+    </table>
+
+</td><td width="25%"></td></tr>
+</table>
